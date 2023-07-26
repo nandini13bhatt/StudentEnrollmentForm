@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <title>Micro Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Student Enrollment Form</h2>
+            <form id="empForm" method="post">
+                <div class="form-group">
+                    <span><label for="rollNo">ROLL NO:</label> <label id="rollNoMsg">
+                        </label></span>
+                    <input type="text" class="form-control" name="rollNo" id="rollNo"
+                           placeholder="Enter Student Roll No" required onchange="getStudent()">
+                </div>
+                <div class="form-group">
+                    <label for="fullName">STUDENT FULL NAME:</label>
+                    <input type="text" class="form-control" id="fullName"
+                           placeholder="Enter Student Name" name="fullName" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="stuClass">CLASS:</label>
+                    <input type="text" class="form-control" id="stuClass"
+                           placeholder="Enter Class" name="stuClass" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate">BIRTH DATE:</label>
+                    <input type="date" class="form-control" id="birthDate"
+                           placeholder="Enter Birth Date" name="birthDate" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="address">ADDRESS:</label>
+                    <input type="text" class="form-control" id="address"
+                           placeholder="Enter Address" name="address" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="enrollDate">ENROLLMENT DATE:</label>
+                    <input type="date" class="form-control" id="enrollDate"
+                           placeholder="Enter Enrollment Date" name="enrollDate" disabled>
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveStudent()" disabled>Save</button>
+                <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled>Update</button>
+                <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>    
+
